@@ -28,6 +28,12 @@ Warehouse Operation Copilot is an AI decision platform MVP for frontline warehou
 │   │   └── models.py      # API data models
 │   ├── requirements.txt
 │   └── smoke_test.py
+├── docker
+│   ├── Dockerfile.backend
+│   ├── Dockerfile.frontend
+│   ├── docker-compose.yml
+│   ├── nginx.conf
+│   └── README.md
 ├── docs
 │   └── PRD.md
 └── frontend
@@ -67,6 +73,30 @@ npm run dev
 Frontend URL: <http://localhost:5173>
 
 > Do not run `npm run dev` from the repository root. The Vite scripts are defined in `frontend/package.json`.
+
+## Docker Run
+
+Docker assets are maintained in the standalone [docker](docker) folder.
+
+From the repository root, build and start both services:
+
+```powershell
+docker compose -f docker/docker-compose.yml up --build
+```
+
+Docker URLs:
+
+- Frontend: <http://localhost:5173>
+- Backend API: <http://localhost:8000>
+- Backend API docs: <http://localhost:8000/docs>
+
+Stop the Docker stack:
+
+```powershell
+docker compose -f docker/docker-compose.yml down
+```
+
+For more details, see [docker/README.md](docker/README.md).
 
 ## Example Questions
 
