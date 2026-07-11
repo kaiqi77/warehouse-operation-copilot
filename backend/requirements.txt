@@ -1,0 +1,5 @@
+fastapi==0.116.1
+uvicorn[standard]>=0.30.6
+langgraph>=1.2.9
+pydantic>=2.11.7
+python-dotenv>=1.1.1

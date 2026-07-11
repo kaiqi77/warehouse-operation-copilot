@@ -1,0 +1,22 @@
+{
+  "orders": [
+    {"hour": "08:00", "inbound": 420, "outbound": 560, "priority": 120},
+    {"hour": "09:00", "inbound": 510, "outbound": 820, "priority": 210},
+    {"hour": "10:00", "inbound": 480, "outbound": 1040, "priority": 360},
+    {"hour": "11:00", "inbound": 450, "outbound": 980, "priority": 300},
+    {"hour": "12:00", "inbound": 380, "outbound": 650, "priority": 170}
+  ],
+  "inventory": [
+    {"sku": "SKU-A01", "on_hand": 1280, "safety_stock": 900, "daily_demand": 220, "zone": "A"},
+    {"sku": "SKU-B18", "on_hand": 240, "safety_stock": 500, "daily_demand": 180, "zone": "B"},
+    {"sku": "SKU-C07", "on_hand": 760, "safety_stock": 650, "daily_demand": 120, "zone": "C"},
+    {"sku": "SKU-D22", "on_hand": 180, "safety_stock": 420, "daily_demand": 140, "zone": "D"}
+  ],
+  "equipment": [
+    {"id": "SORTER-01", "type": "sorter", "status": "degraded", "throughput_per_hour": 720, "target_throughput": 900, "queue": 180, "risk": "medium"},
+    {"id": "CONVEYOR-A", "type": "conveyor", "status": "running", "throughput_per_hour": 640, "target_throughput": 650, "queue": 40, "risk": "low"},
+    {"id": "AGV-FLEET", "type": "agv", "status": "congested", "throughput_per_hour": 310, "target_throughput": 420, "queue": 96, "risk": "high"}
+  ],
+  "labor": {"planned_heads": 32, "available_heads": 28, "pick_rate_per_head": 38},
+  "sla": {"target_ship_before_hour": "14:00", "target_completion_rate": 0.96}
+}

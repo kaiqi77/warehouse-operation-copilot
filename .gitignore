@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+backend/app/data/decision_memory.json
+backend/app/data/mcp_audit.json
