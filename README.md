@@ -45,7 +45,7 @@ Warehouse Operation Copilot is an AI decision platform MVP for frontline warehou
 Open PowerShell in the backend directory, install dependencies, and start FastAPI:
 
 ```powershell
-cd "c:\Users\jin.k\OneDrive - Procter and Gamble\kimi\kimi\experience\warehouse-operation-copilot\backend"
+cd "\warehouse-operation-copilot\backend"
 pip install -r requirements.txt
 python -m uvicorn app.main:app --reload --port 8000
 ```
@@ -59,7 +59,7 @@ API docs: <http://localhost:8000/docs>
 Open another PowerShell in the frontend directory, install dependencies, and start Vite:
 
 ```powershell
-cd "c:\Users\jin.k\OneDrive - Procter and Gamble\kimi\kimi\experience\warehouse-operation-copilot\frontend"
+cd "\warehouse-operation-copilot\frontend"
 npm install
 npm run dev
 ```
